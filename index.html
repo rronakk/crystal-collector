@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Star Wars- RPG</title>
+    <title>crystal-collector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assests/css/style.css" />
@@ -15,10 +15,55 @@
     <script src="assests/js/game.js" async></script>
 </head>
 <body>
-    <h1> Crystal Collector</h1>
-    <div class="container">
-        
+    <div class="jumbotron">
+            <h1 class="display-4">Crystal Collector</h1>
+            <p class="lead">test which lucky crystal help you win the treasure</p>
+            <hr class="my-4">
     </div>
+    <div class="card" style="width: auto;">
+        <div class="card-body">
+            <h5 class="card-title">Rules</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Target Score</h5>
+            <p class="card-text" id="target-score">200</p>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Wins : <span id="wins"></span></h5>
+        </div>
+        <div class="card-body">
+                <h5 class="card-title">Loss : <span id="loss"></span></h5>
+        </div>
+    </div>
+    <div class="container card">
+        <div class="row ">
+            <div class="col-md-3 gem" stone="ruby" value="">
+                <img src="http://via.placeholder.com/150x100" alt="hangman">
+            </div>
+            <div class="col-md-3 gem" stone="diamond">
+                <img src="http://via.placeholder.com/150x100" alt="hangman">
+            </div>
+            <div class="col-md-3 gem" stone="sapphire">
+                <img src="http://via.placeholder.com/150x100" alt="hangman">
+                </div>
+            <div class="col-md-3 gem" stone="turquoise">
+                <img src="http://via.placeholder.com/150x100" alt="hangman">
+            </div>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Your Total score : </h5>
+                <p class="card-text" id="score"> 0</p>
+            </div>
+    </div>
+
 
 
     
