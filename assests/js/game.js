@@ -26,16 +26,17 @@ function startGame(){
     $('div[stone="turquoise"]').attr("value", turquoiseValue);
 
 
-    $(".gem").on('click', function(){
+    $(".gem").on('click', function(){ //FIXME: add animation for every click
+        $(".gem").effect("shake");
         score += parseInt($(this).attr("value"));
         $("#score").html(score);
-        console.log(targetScore);
-        console.log(score);
 
         if (targetScore === score){
             win++;
             $("#wins").html(win);
+            console.log(score)
             score = 0;
+            console.log(score)
             $("#score").html(score);
             startGame()
         }

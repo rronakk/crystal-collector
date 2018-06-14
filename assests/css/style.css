@@ -3,3 +3,39 @@
     height: 200px;
     object-fit: cover;
 }
+
+body{
+    background-image: url(../images/diagmonds.png);
+    padding-bottom: 70px;
+}
+
+.card{
+    margin: 0.5% 3%;
+}
+.jumbotron{
+    padding: 20px;
+}
+.container{
+    margin: 0;
+}
+#target-score ,#score {
+    background-color: rgb(165, 100, 26);
+
+}
+.rules{
+    background-color: rgb(48, 173, 173);
+}
+.row{
+    text-align: center;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+    background-color: rgb(133, 98, 165);
+}
+
+.img-fluid{
+    height: 150px;
+    cursor: pointer;
+}
+
