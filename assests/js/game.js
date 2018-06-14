@@ -27,21 +27,20 @@ function startGame(){
 
 
     $(".gem").on('click', function(){ //FIXME: add animation for every click
-        $(".gem").effect("shake");
         score += parseInt($(this).attr("value"));
         $("#score").html(score);
 
         if (targetScore === score){
             win++;
+            alert("Whoo hooo ... You Win !!!!");
             $("#wins").html(win);
-            console.log(score)
             score = 0;
-            console.log(score)
             $("#score").html(score);
             startGame()
         }
         else if( score > targetScore ){
             loss++;
+            alert("Boooo .... You lost :(");
             $("#loss").html(loss);
             score = 0;
             $("#score").html(score);
