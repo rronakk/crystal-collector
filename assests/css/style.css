@@ -39,3 +39,7 @@ body{
     cursor: pointer;
 }
 
+.img-fluid:active{
+    transform: translateY(20px);
+}
+
